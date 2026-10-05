@@ -1,0 +1,16 @@
+{
+  "selected_run": "efficientnet_b0_baseline_seed42",
+  "criterion": "mean per-source validation macro-F1",
+  "validation_scores": {
+    "efficientnet_b0_baseline_seed42": 0.9934577741024029,
+    "efficientnet_b0_attention_seed42": 0.9923841981221562,
+    "resnet18_baseline_seed42": 0.9896455594401194,
+    "mobilenet_v3_large_baseline_seed42": 0.9887354592646638,
+    "mobilenet_v3_large_attention_seed42": 0.9883851155133305,
+    "resnet18_attention_seed42": 0.987552624215995
+  },
+  "checkpoint_sha256": "39b95ed2f04d608d5e86962404d289dc902577d9405280dd13db069d24fc5fb5",
+  "shared_split_sha256": "0510f34f9fbc140dbfe5f1ad6a212393f9892d6338adbc2f4fd53d69e71088df",
+  "scope": "Six CNN variants; historical ViT is a separately reported reference",
+  "test_status": "ViT has previously reported results on this split; no tuning from those results"
+}

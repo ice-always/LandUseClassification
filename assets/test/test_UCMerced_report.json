@@ -1,0 +1,45 @@
+{
+  "Agriculture": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 15.0
+  },
+  "Nature_Forest": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 30.0
+  },
+  "Water": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 30.0
+  },
+  "Residential": {
+    "precision": 1.0,
+    "recall": 0.9777777777777777,
+    "f1-score": 0.9887640449438202,
+    "support": 45.0
+  },
+  "Industrial_Infrastructure": {
+    "precision": 0.967741935483871,
+    "recall": 1.0,
+    "f1-score": 0.9836065573770492,
+    "support": 30.0
+  },
+  "accuracy": 0.9933333333333333,
+  "macro avg": {
+    "precision": 0.9935483870967742,
+    "recall": 0.9955555555555555,
+    "f1-score": 0.9944741204641738,
+    "support": 150.0
+  },
+  "weighted avg": {
+    "precision": 0.9935483870967742,
+    "recall": 0.9933333333333333,
+    "f1-score": 0.9933505249585558,
+    "support": 150.0
+  }
+}

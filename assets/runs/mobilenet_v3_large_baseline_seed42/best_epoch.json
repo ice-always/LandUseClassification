@@ -1,0 +1,5 @@
+{
+  "epoch": 14,
+  "stage": "finetune",
+  "domain_macro_f1": 0.9887354592646637
+}

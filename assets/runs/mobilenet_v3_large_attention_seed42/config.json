@@ -1,0 +1,68 @@
+{
+  "signature": {
+    "protocol": "shared_mix_v1",
+    "architecture": "mobilenet_v3_large",
+    "attention": true,
+    "config": {
+      "seed": 42,
+      "image_size": 224,
+      "batch_size": 32,
+      "warmup_epochs": 2,
+      "finetune_epochs": 12,
+      "patience": 4,
+      "head_lr": 0.001,
+      "finetune_lr": 0.0001,
+      "weight_decay": 0.0001,
+      "balance": true,
+      "pretrained": true,
+      "clean_train_limit": 1000
+    },
+    "manifest_sha256": "23e96caa6ee68141535548e95b6d694469045fe8b99b7cb3b2f1a8a149edfe94"
+  },
+  "classes": [
+    "Agriculture",
+    "Nature_Forest",
+    "Water",
+    "Residential",
+    "Industrial_Infrastructure"
+  ],
+  "mapping": {
+    "EuroSAT": {
+      "AnnualCrop": 0,
+      "PermanentCrop": 0,
+      "Forest": 1,
+      "Pasture": 1,
+      "HerbaceousVegetation": 1,
+      "River": 2,
+      "SeaLake": 2,
+      "Residential": 3,
+      "Industrial": 4,
+      "Highway": 4
+    },
+    "UCMerced": {
+      "agricultural": 0,
+      "forest": 1,
+      "chaparral": 1,
+      "river": 2,
+      "harbor": 2,
+      "denseresidential": 3,
+      "mediumresidential": 3,
+      "sparseresidential": 3,
+      "buildings": 4,
+      "freeway": 4
+    }
+  },
+  "weights": "MobileNet_V3_Large_Weights.IMAGENET1K_V2",
+  "finetune_scope": "features[15:17]",
+  "bn_statistics": "frozen",
+  "parameters": 3161910,
+  "finetune_parameters": 1142838,
+  "train_eval_n": 1002,
+  "validation_n": 4200,
+  "test_accessed": false,
+  "device": "cuda",
+  "gpu": "Tesla T4",
+  "torch": "2.11.0+cu130",
+  "torchvision": "0.26.0+cu130",
+  "python": "3.13.15"
+}

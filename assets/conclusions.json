@@ -1,0 +1,64 @@
+{
+  "selection": {
+    "selected_run": "efficientnet_b0_baseline_seed42",
+    "criterion": "mean per-source validation macro-F1",
+    "validation_scores": {
+      "efficientnet_b0_baseline_seed42": 0.9934577741024029,
+      "efficientnet_b0_attention_seed42": 0.9923841981221562,
+      "resnet18_baseline_seed42": 0.9896455594401194,
+      "mobilenet_v3_large_baseline_seed42": 0.9887354592646638,
+      "mobilenet_v3_large_attention_seed42": 0.9883851155133305,
+      "resnet18_attention_seed42": 0.987552624215995
+    },
+    "checkpoint_sha256": "39b95ed2f04d608d5e86962404d289dc902577d9405280dd13db069d24fc5fb5",
+    "shared_split_sha256": "0510f34f9fbc140dbfe5f1ad6a212393f9892d6338adbc2f4fd53d69e71088df",
+    "scope": "Six CNN variants; historical ViT is a separately reported reference",
+    "test_status": "ViT has previously reported results on this split; no tuning from those results"
+  },
+  "paired_attention_results": {
+    "resnet18": {
+      "finetune_scope": "layer4",
+      "attention_minus_baseline": -0.002092935224124459,
+      "interpretation": "Positive means added spatial MHA improves mean domain validation F1 in this seed.",
+      "seed_count": 1
+    },
+    "mobilenet_v3_large": {
+      "finetune_scope": "features[15:17]",
+      "attention_minus_baseline": -0.0003503437513332486,
+      "interpretation": "Positive means added spatial MHA improves mean domain validation F1 in this seed.",
+      "seed_count": 1
+    },
+    "efficientnet_b0": {
+      "finetune_scope": "features[7:9]",
+      "attention_minus_baseline": -0.0010735759802467104,
+      "interpretation": "Positive means added spatial MHA improves mean domain validation F1 in this seed.",
+      "seed_count": 1
+    }
+  },
+  "test_metrics": [
+    {
+      "source": "All",
+      "n": 4201,
+      "accuracy": 0.9845274934539396,
+      "macro_f1": 0.9852965258928684
+    },
+    {
+      "source": "EuroSAT",
+      "n": 4051,
+      "accuracy": 0.984201431745248,
+      "macro_f1": 0.9851450686137048
+    },
+    {
+      "source": "UCMerced",
+      "n": 150,
+      "accuracy": 0.9933333333333332,
+      "macro_f1": 0.9944741204641738
+    }
+  ],
+  "limits": [
+    "One training seed",
+    "Image-level split, not geographic holdout",
+    "Mixed labels can be ambiguous",
+    "ViT test has previously been reported"
+  ]
+}

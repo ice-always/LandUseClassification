@@ -1,0 +1,44 @@
+[
+  {
+    "filename": "0_Agriculture.jpg",
+    "class_name": "Agriculture",
+    "label": "0: Agriculture (test)",
+    "source_path": "EuroSAT_RGB/AnnualCrop/AnnualCrop_1005.jpg",
+    "pixel_sha256": "37bd42f7e78ee2c1cdc18bf4a14c2b27899b6fb0b7d43c78d24c2b89d26a6be8"
+  },
+  {
+    "filename": "1_Nature_Forest.jpg",
+    "class_name": "Nature_Forest",
+    "label": "1: Nature_Forest (test)",
+    "source_path": "EuroSAT_RGB/Forest/Forest_100.jpg",
+    "pixel_sha256": "e851bc706fd15a2bd09db4e4b20103b68453b224cd541c18d8c27d87a8e74c09"
+  },
+  {
+    "filename": "2_Water.jpg",
+    "class_name": "Water",
+    "label": "2: Water (test)",
+    "source_path": "EuroSAT_RGB/River/River_10.jpg",
+    "pixel_sha256": "3f7f1b5fc12341aa9d330379b40bb3ba557fd6aac374ac229c88d275dfd32681"
+  },
+  {
+    "filename": "3_Residential.jpg",
+    "class_name": "Residential",
+    "label": "3: Residential (test)",
+    "source_path": "EuroSAT_RGB/Residential/Residential_1000.jpg",
+    "pixel_sha256": "88bce86eb5d788f6696001852d2f2d55a61dbb658fdd7cdd587cc875c20a0c8f"
+  },
+  {
+    "filename": "4_Industrial_Infrastructure.jpg",
+    "class_name": "Industrial_Infrastructure",
+    "label": "4: Industrial_Infrastructure (test)",
+    "source_path": "EuroSAT_RGB/Highway/Highway_1001.jpg",
+    "pixel_sha256": "6ce5eb7180f4576ec2c4c1c727b4d2ef811148cfc85ed400fad6dab5bd9e328d"
+  },
+  {
+    "filename": "test_error.jpg",
+    "class_name": "Agriculture",
+    "label": "ตัวอย่างที่ทายผิด (test)",
+    "source_path": "EuroSAT_RGB/AnnualCrop/AnnualCrop_1323.jpg",
+    "pixel_sha256": "4092f05e59346ef0b56d0f433a12c5e619f2526cd4ed0a316550d8fe2829dbc1"
+  }
+]

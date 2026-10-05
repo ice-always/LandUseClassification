@@ -1,0 +1,6 @@
+,Agriculture,Nature_Forest,Water,Residential,Industrial_Infrastructure
+Agriculture,813,9,4,1,1
+Nature_Forest,11,1183,4,1,1
+Water,1,4,813,0,4
+Residential,0,0,0,449,1
+Industrial_Infrastructure,3,3,6,2,736
